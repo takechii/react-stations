@@ -1,7 +1,12 @@
-// @ts-check
+// DogImage.js
+import React from 'react';
 
-export const DogImage = () => {
-  return <></>
+/**
+ * @param {{ imageUrl: string }} props
+ * @returns {JSX.Element}
+ */
+export const DogImage = ({ imageUrl }) => {
+  return (
+    <img src={imageUrl} alt="犬の画像" />
+  );
 }
-
-export default DogImage
